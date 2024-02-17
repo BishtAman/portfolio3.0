@@ -27,6 +27,12 @@ To run the project locally, follow these steps:
 4. Start the development server by running `npm run dev` or `yarn dev`.
 5. Open your browser and visit `http://localhost:5173` to view the website.
 
+## Previous Portfolios
+
+- **Portfolio 1.0**: [https://amanbisht-dev.netlify.app](https://amanbisht-dev.netlify.app)
+- **Portfolio 2.0**: [https://bishtaman.vercel.app](https://bishtaman.vercel.app)
+
+
 ## Contributing
 
 This project is currently a solo endeavor. However, contributions, suggestions, and feedback are always welcome! If you find any bugs or have ideas for improvements, please feel free to open an issue or submit a pull request.
