@@ -1,35 +1,17 @@
 
 
-// :active,
-// :hover,
-// :focus {
-//   outline: 0 !important;
-//   outline-offset: 0;
-// }
-// ::before,
-// ::after {
-//   position: absolute;
-//   content: "";
-// }
-.btn,
-.btn-4 {
-  /* Reset outline for buttons */
+:active,
+:hover,
+:focus {
   outline: 0 !important;
   outline-offset: 0;
-
-  /* Styles for ::before and ::after pseudo-elements */
-  position: relative;
 }
-
-/* Target ::before and ::after pseudo-elements for buttons */
-
-.btn-4::before,
-.btn-4::after {
-  /* Common styles for ::before and ::after */
+::before,
+::after {
   position: absolute;
   content: "";
-  /* Add other common styles here */
 }
+
 .btn {
   position: relative;
   display: inline-block;
