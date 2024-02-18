@@ -1,0 +1,72 @@
+
+.curtain {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    animation: hideCurtain 2s ease-in 4s forwards;
+ z-index: 999;
+  }
+  @keyframes hideCurtain {
+    from {
+      display: block;
+    }
+    to {
+      display: none;
+    }
+  }
+  .firstCurtain {
+    border-right: 20px solid #00d9ff;
+    height: 100vh;
+    width: 50%;
+    background-color: #060f19;
+    position: absolute;
+    left: 0;
+    animation: moveLeftFirst 2s forwards ease-in-out;
+    animation-delay: 4s;
+  }
+  
+  .secondCurtain {
+    height: 100vh;
+    right: 0;
+    position: absolute;
+    width: 50%;
+    background-color: #060f19;
+    border-left: 20px solid #00d9ff;
+    animation: moveRightSecond 2s forwards ease-in-out;
+    animation-delay: 4s;
+  }
+  
+  @keyframes moveLeftFirst {
+    0% {
+      border-right: 20px solid #00d9ff;
+      width: 50%;
+    }
+    90% {
+      border-right: 10px solid #00d9ff;
+    }
+    95% {
+      border-right: 3px solid #00d9ff;
+    }
+    100% {
+      border-left: none;
+      width: 0%;
+    }
+  }
+  
+  @keyframes moveRightSecond {
+    0% {
+      border-left: 20px solid #00d9ff;
+      width: 50%;
+    }
+    90% {
+      border-left: 10px solid #00d9ff;
+    }
+    95% {
+      border-left: 3px solid #00d9ff;
+    }
+    100% {
+      border-right: none;
+      width: 0%;
+    }
+  }

@@ -1,13 +1,16 @@
+import { Fragment } from "react"
+import { Home } from "./routes/home/home.component"
+import { Cursor } from "../src/components/cursor/cursor.component";
 
 
 const App = () => {
 
 
   return (
-    <>
-      <h1 className="text-cyan-400">Hello there</h1>
-      
-    </>
+    <Fragment>
+      <Home/> 
+      <Cursor />
+    </Fragment>
   )
 }
 
