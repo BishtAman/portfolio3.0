@@ -28,7 +28,7 @@ export const BaseData = () => {
 
       <p className="text-white text-[70px] font-extrabold">
         Uncovering New Realms of the Digital Cosmos, where&nbsp;
-        <span className=" text-[#00D9FF] white-phrase">Code</span>and&nbsp;
+        <span className=" text-[#00D9FF] white-phrase">Code</span> and&nbsp;
         <span className=" text-[#00D9FF] white-phrase">Creativity</span>{" "}
         Collide.
       </p>
