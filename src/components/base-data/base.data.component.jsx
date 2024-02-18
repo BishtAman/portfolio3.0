@@ -17,9 +17,9 @@ export const BaseData = () => {
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, scale: 0.2, y: 50 }}
-      animate={inView ? { opacity: 1, scale: 1, y: 0 } : {}}
-      transition={{ duration: 1.5, delay: 4.5, ease: [0, 0.71, 0.2, 1.01], }}
+      initial={{ opacity: 0}}
+      animate={inView ? { opacity: 1} : {}}
+      transition={{ duration: 3, delay: 4.5,}}
       className="phrase h-[100vh] w-[100vw] flex justify-center align-middle flex-col pl-[16rem] pr-[4rem] space-y-7"
     >
       <h1 className="text-[#00D9FF] text-[35px]">

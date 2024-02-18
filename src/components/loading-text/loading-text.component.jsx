@@ -1,4 +1,4 @@
-import './loading-text.styles.css'
+import './loading-text.styles.scss'
 export const Loading = () => {
   return (
     <div className="loading">

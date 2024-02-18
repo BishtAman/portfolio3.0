@@ -34,15 +34,16 @@
       margin: 0 5px;
       color: #fff;
       font-family: "Quattrocento Sans", sans-serif;
-      @for $i from 0 through 6 {
-        &:nth-child(#{$i + 1}) {
-          filter: blur(0px);
-          animation: blur-text 1s (#{$i/5}) + s infinite linear alternate;
-        }
-      }
     }
+    animation: blinker 1.5s linear infinite;
   }
-  
+
+@keyframes blinker {
+    50% {
+        opacity: 0.2;
+    }
+}
+
   @keyframes blur-text {
     0% {
       filter: blur(0px);

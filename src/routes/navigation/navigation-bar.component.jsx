@@ -16,11 +16,12 @@ export const Navigation = () => {
   }, [inView]);
   return (
     <motion.nav
-      className="nav-bar flex justify-between items-center py-2 bg-[#060F19] fixed w-[100%] z-50"
+    
+      className="nav-bar flex justify-between items-center py-2 bg-[#060F19] fixed w-[100%] z-50 "
       ref={ref}
-      initial={{ opacity: 0, scale: 0.2, y: 50 }}
-      animate={inView ? { opacity: 1, scale: 1, y: 0 } : {}}
-      transition={{ duration: 1.5, delay: 4.5, ease: [0, 0.71, 0.2, 1.01] }}
+      initial={{ opacity: 0 }}
+      animate={inView ? { opacity: 1} : {}}
+      transition={{ duration: 3, delay: 4.5, }}
     >
       <div className="logo  w-[100%] flex px-[180px] items-center">
         <a href="#" className="flex items-center scr">
