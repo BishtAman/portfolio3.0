@@ -5,12 +5,13 @@ import { Navigation } from "../navigation/navigation-bar.component";
 import "./home.styles.scss";
 export const Home = () => {
   return (
-    <div className="App ">
+    <div className="App">
+    
       <Loading />
       <Curtains />
       <Navigation />
       <Base />
-      <div className="h-[100vh] w-[100vw] bg-slate-700">
+      <div className="h-[100vh] w-[100%] bg-slate-700">
 
       </div>  
       

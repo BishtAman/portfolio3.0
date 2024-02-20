@@ -1,7 +1,7 @@
 import logo from "../../assets/logo.svg";
 import "./navigation-bar.styles.scss";
 import { motion } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { Fragment, useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
 
 export const Navigation = () => {
@@ -15,39 +15,72 @@ export const Navigation = () => {
     }
   }, [inView]);
   return (
-    <motion.nav
-    
-      className="nav-bar flex justify-between items-center py-2 bg-[#060F19] fixed w-[100%] z-50 "
-      ref={ref}
-      initial={{ opacity: 0 }}
-      animate={inView ? { opacity: 1} : {}}
-      transition={{ duration: 3, delay: 4.5, }}
-    >
-      <div className="logo  w-[100%] flex px-[180px] items-center">
-        <a href="#" className="flex items-center scr">
-          <img className="h-[60px]" src={logo} alt="this is the logo" />
-          <span className="text-white font-extrabold text-[35px] mx-[-8px]">
-            man
-          </span>
-        </a>
-      </div>
-      <ul className="flex text-[16px] text-[#00d9ff] font-normal space-x-6 pr-[2.75rem]">
-        <a>
-          <li>ABOUT</li>
-        </a>
-        <a>
-          <li>SKILLS</li>
-        </a>
-        <a>
-          <li>PROJECTS</li>
-        </a>
-        <a>
-          <li>OTHERS</li>
-        </a>
-        <a>
-          <li>CONTACT</li>
-        </a>
-      </ul>
-    </motion.nav>
+    <Fragment>
+      <nav className=" nav-bar flex flex-row justify-between items-center py-2 bg-[#060F19] fixed w-[100%]  z-50 max-[520px]:w-[100vw]">
+        <div role="navigation" className=" min-[520px]:hidden">
+          <div id="menuToggle">
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+              <a href="">
+                <li>ABOUT</li>
+              </a>
+              <a href="">
+                <li>SKILLS</li>
+              </a>
+              <a href="">
+                <li>PROJECTS</li>
+              </a>
+              <a href="">
+                <li>OTHERS</li>
+              </a>
+              <a href="" target="_blank">
+                <li>CONTACT</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <motion.div
+          className="logo  w-[100%] flex px-[180px] items-center max-[1000px]:px-[100px] max-[700px]:px-[80px] max-[600px]:px-[10px] max-[520px]:relative max-[520px]:right-0 max-[520px]:w-[20%] max-[450px]:w-[25%]"
+          ref={ref}
+          initial={{ y: 50, scale: 0.5, opacity: 0 }}
+          animate={inView ? { opacity: 1, scale: 1, y: 0 } : {}}
+          transition={{ duration: 1, delay: 4.5 }}
+        >
+          <a href="#" className="flex items-center scr">
+            <img
+              className="h-[60px] max-[1255px]:h-[40px] "
+              src={logo}
+              alt="this is the logo"
+            />
+            <span className="text-white font-extrabold text-[25px] mx-[-8px] max-[1255px]:text-[18px] max-[1255px]:mx-[-5px]">
+              man
+            </span>
+          </a>
+        </motion.div>
+
+        <ul className="flex text-[16px] text-[#00d9ff] font-normal space-x-6 pr-[2.75rem]  max-[1255px]:text-[12px]   max-[520px]:hidden ">
+          <a>
+            <li>ABOUT</li>
+          </a>
+          <a>
+            <li>SKILLS</li>
+          </a>
+          <a>
+            <li>PROJECTS</li>
+          </a>
+          <a>
+            <li>OTHERS</li>
+          </a>
+          <a>
+            <li>CONTACT</li>
+          </a>
+        </ul>
+      </nav>
+    </Fragment>
   );
 };

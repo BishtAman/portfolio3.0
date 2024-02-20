@@ -1,12 +1,13 @@
+import { Fragment } from "react";
 import topLine from "../../assets/Home page top line.png";
 // import bottomLine from "../../assets/home page botton line.png";
 import { PlanetImage } from "../planet-image/planet-image.component";
 
 export const BaseImages = () => {
   return (
-    <div className="">
+    <Fragment>
       <img
-        className=" absolute top-[-18rem] right-[-7rem] w-[63%] h-[63%] z-[-1]"
+        className=" absolute top-[-7rem] right-0 w-[63%] h-[63%] z-[-1] max-[700px]:w-[70%] max-[700px]:h-[40%]"
         src={topLine}
         alt="this is a top line"
       />
@@ -17,6 +18,6 @@ export const BaseImages = () => {
         alt="this is bottom line"
       /> */}
       <PlanetImage />
-    </div>
+    </Fragment>
   );
 };

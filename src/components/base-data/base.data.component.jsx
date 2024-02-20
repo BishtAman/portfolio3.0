@@ -17,19 +17,19 @@ export const BaseData = () => {
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0}}
-      animate={inView ? { opacity: 1} : {}}
-      transition={{ duration: 3, delay: 4.5,}}
-      className="phrase h-[100vh] w-[100vw] flex justify-center align-middle flex-col pl-[16rem] pr-[4rem] space-y-7"
+      initial={{ y: 50, scale:0.5, opacity: 0 }}
+      animate={inView ? { opacity: 1, scale: 1, y: 0 } : {}}
+      transition={{ duration: 1, delay: 4.5 }}
+      className="phrase h-[100vh] w-[100%] flex justify-center pt-[100px] flex-col pl-[16rem] pr-[2rem] max-[1000px]:pl-[11rem] max-[1000px]:left-[75px] max-[700px]:pl-[8rem] max-[500px]:pl-[2rem] max-[500px]:pt-[10px] max-[500px]:items-center space-y-10"
     >
-      <h1 className="text-[#00D9FF] text-[35px]">
+      <h1 className="text-[#00D9FF] text-[35px]  max-[1255px]:text-[28px] max-[1000px]:text-[24px] max-[500px]:text-[18px] max-[500px]:text-center">
         Hey, I&#39;m <span className="text-white white-phrase">Aman.</span>
       </h1>
 
-      <p className="text-white text-[70px] font-extrabold">
+      <p className="text-white text-[60px] font-extrabold max-[1255px]:text-[50px] max-[1000px]:text-[35px] max-[500px]:text-[37px] max-[500px]:text-center">
         Uncovering New Realms of the Digital Cosmos, where&nbsp;
         <span className=" text-[#00D9FF] white-phrase">Code</span> and&nbsp;
-        <span className=" text-[#00D9FF] white-phrase">Creativity</span>{" "}
+        <span className=" text-[#00D9FF] white-phrase">Creativity</span>
         Collide.
       </p>
 
@@ -38,33 +38,3 @@ export const BaseData = () => {
   );
 };
 
-// import "./styles.css";
-
-// export default function App() {
-
-//   return (
-//     <>
-//       <motion.div
-//         className="App1"
-//         ref={ref}
-//         initial={{ opacity: 0, scale: 0.2, y: 50 }}
-//         animate={inView ? { opacity: 1, scale: 1, y: 0 } : {}}
-//         transition={{ duration: 1.5, delay: 0.1, ease: [0, 0.71, 0.2, 1.01] }}
-//       />
-//       <motion.div
-//         className="App2"
-//         ref={ref}
-//         initial={{ opacity: 0, scale: 0.2, y: 50 }}
-//         animate={inView ? { opacity: 1, scale: 1, y: 0 } : {}}
-//         transition={{ duration: 1.5, delay: 0.1, ease: [0, 0.71, 0.2, 1.01] }}
-//       />
-//       <motion.div
-//         className="App3"
-//         ref={ref}
-//         initial={{ opacity: 0, scale: 0.2, y: 50 }}
-//         animate={inView ? { opacity: 1, scale: 1, y: 0 } : {}}
-//         transition={{ duration: 1.5, delay: 0.1, ease: [0, 0.71, 0.2, 1.01] }}
-//       />
-//     </>
-//   );
-// }
