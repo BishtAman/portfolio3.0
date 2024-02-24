@@ -21,7 +21,7 @@ export const PlanetImage = () => {
   return (
     <Fragment>
       <motion.div
-        className="drag-area absolute top-[29vh] left-[-96px] max-[1000px]:left-[-156px] max-[700px]:left-[-166px] max-[500px]:left-[-156px] max-[500px]:w-[230px] max-[500px]:h-[230px] max-[500px]:top-[7vh]"
+        className="drag-area absolute top-[29vh] left-[-96px]  max-[700px]:left-[-166px] max-[500px]:left-[-156px] max-[500px]:w-[230px] max-[500px]:h-[230px] max-[500px]:top-[7vh] max-[1350px]:top-[7vh] -z-10"
         ref={constraintsRef}
       />
       <motion.img
@@ -31,7 +31,7 @@ export const PlanetImage = () => {
         transition={{ duration: 0.7, delay: animationDelay }} // Use dynamic delay
         drag
         dragConstraints={constraintsRef}
-        className="dragged-object absolute top-[25vh] left-[-96px] max-[1000px]:left-[-156px] max-[700px]:left-[-166px] max-[500px]:left-[-156px] max-[500px]:w-[230px] max-[500px]:h-[230px] max-[500px]:top-[7vh]"
+        className="dragged-object absolute top-[25vh] left-[-96px] max-[1000px]:left-[-156px] max-[500px]:w-[230px] max-[500px]:h-[230px] max-[500px]:top-[7vh] "
         src={planet}
         alt="this is planet"
       />
