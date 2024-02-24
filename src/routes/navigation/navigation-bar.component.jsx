@@ -26,7 +26,7 @@ export const Navigation = () => {
             <span></span>
 
             <ul id="menu">
-              <a href="">
+              <a href="#about">
                 <li>ABOUT</li>
               </a>
               <a href="">
@@ -64,7 +64,7 @@ export const Navigation = () => {
         </motion.div>
 
         <ul className="flex text-[16px] text-[#00d9ff] font-normal space-x-6 pr-[2.75rem]  max-[1255px]:text-[12px]   max-[520px]:hidden ">
-          <a>
+          <a href="#about">
             <li>ABOUT</li>
           </a>
           <a>
