@@ -29,7 +29,7 @@ export const About = () => {
           <h1 className="text-[60px] font-extrabold max-[520px]:text-[50px] max-[460px]:text-[40px]">
             <span className="text-[#0EDBFF]">My</span> Odyssey
           </h1>
-          <p className="about-text text-[18px] font-extralight text-justify tracking-[2px] text-[#0EDBFF] max-[460px]:text-[15px]">
+          <p className="about-text text-[18px] font-extralight text-justify tracking-[2px] text-[#92efff] max-[460px]:text-[15px]">
             Hey Everyone, I&#39;m Aman Bisht, a self-taught frontend developer
             diving deep into the world of React. With a fervent passion for web3
             technology, I&#39;m relentlessly exploring new horizons in web
