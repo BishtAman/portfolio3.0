@@ -51,11 +51,7 @@ export const About = () => {
         </section>
 
         <motion.section
-          ref={ref}
-          initial={{ x: 50, opacity: 0 }}
-          animate={inView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          className="relative w-[50%] flex justify-center max-[900px]:w-[0%]"
+          className="relative flex justify-center max-[900px]:w-[0%]"
         >
           <img
             src={Frame}
