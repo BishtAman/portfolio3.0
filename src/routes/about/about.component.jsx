@@ -35,7 +35,7 @@ export const About = () => {
             initial={{ x: -50, opacity: 0 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-[18px] font-extralight text-justify tracking-[2px] text-white max-[460px]:text-[15px]"
+            className="text-[18px] font-light text-justify tracking-[2px] text-white max-[460px]:text-[15px]"
           >
             Hey Everyone, I&#39;m Aman Bisht, a self-taught frontend developer
             diving deep into the world of React. With a fervent passion for web3
