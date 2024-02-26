@@ -5,8 +5,7 @@ export const Cursor = () => {
   const cursor2Ref = useRef(null);
 
   function handleMouseMove(e) {
-    if (cursorRef.current) {
-      cursorRef.current.style.left = e.pageX + "px";
+    if (cursorRef.current) {      cursorRef.current.style.left = e.pageX + "px";
       cursorRef.current.style.top = e.pageY + "px";
     }
     setTimeout(() => {
@@ -22,7 +21,7 @@ export const Cursor = () => {
     };
   }, []);
   return <Fragment>
-    <div className="cursor" ref={cursorRef}></div>
+    {/* <div className="cursor" ref={cursorRef}></div> */}
     <div className="cursor2 max-[500px]:hidden" ref={cursor2Ref}></div>
   </Fragment>;
 };
