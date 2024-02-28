@@ -16,7 +16,7 @@ export const Home = () => {
       {/* <div className="h-[100vh] w-[100%] bg-slate-700"></div> */}
       <div id="about" className="h-[70px] mt-[30px]"></div>
       <About />
-      <div id="about" className="h-[70px] mt-[30px]"></div>
+      <div id="about" className="h-[70px] mt-[30px] max-[450]:h-[30px]"></div>
       <Skills/>
     </div>
   );
