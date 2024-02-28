@@ -20,7 +20,7 @@ export const BaseData = () => {
   const buttonName = "lets Connect"; // Define buttonName here
 
   return (
-    <div className="phrase h-screen w-full flex flex-col items-center justify-center py-12 px-4 sm:px-4 lg:px-7 space-y-14">
+    <div  className="phrase h-screen w-full flex flex-col items-center justify-center py-12 px-4 sm:px-4 lg:px-7 space-y-14">
       <motion.h1
         ref={ref}
         initial={{ y: 150, opacity: 0 }}
