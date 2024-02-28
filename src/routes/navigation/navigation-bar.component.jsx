@@ -67,7 +67,7 @@ export const Navigation = () => {
           <a href="#about">
             <li>ABOUT</li>
           </a>
-          <a>
+          <a href="#skills">
             <li>SKILLS</li>
           </a>
           <a>
