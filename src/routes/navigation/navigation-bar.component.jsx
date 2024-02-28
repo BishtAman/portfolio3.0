@@ -29,7 +29,7 @@ export const Navigation = () => {
               <a href="#about">
                 <li>ABOUT</li>
               </a>
-              <a href="">
+              <a href="#skills">
                 <li>SKILLS</li>
               </a>
               <a href="">

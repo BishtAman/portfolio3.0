@@ -35,7 +35,7 @@ export const BaseData = () => {
         initial={{ y: 150, opacity: 0 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, delay: animationDelay }}
-        className="text-white text-4xl sm:text-3xl lg:text-6xl text-center font-extrabold max-w-6xl"
+        className="text-white text-4xl sm:text-3xl lg:text-6xl text-center max-[450px]:text-left font-extrabold max-w-6xl"
       >
         Uncovering New Realms of the Digital Cosmos, where{" "}
         <span className="text-[#00D9FF]">Code</span> and{" "}
