@@ -1,0 +1,51 @@
+import floating from "../../assets/floating.png";
+
+import { motion } from "framer-motion";
+import { useEffect, useRef } from "react";
+import { useInView } from "react-intersection-observer";
+
+export const AboutInfo = () => {
+  const [ref, inView] = useInView();
+  const hasAnimatedRef = useRef(false);
+  useEffect(() => {
+    if (inView && !hasAnimatedRef.current) {
+      // Set hasAnimatedRef to true to prevent animation from repeating
+      hasAnimatedRef.current = true;
+    }
+  }, [inView]);
+  return (
+    <section className="flex flex-col justify-between w-[50%] pl-[70px] space-y-8 [@media(max-width:900px)]:w-[100%] [@media(max-width:900px)]:px-[30px]">
+      <motion.h1
+        ref={ref}
+        initial={{ x: -50, opacity: 0 }}
+        animate={inView ? { opacity: 1, x: 0 } : {}}
+        transition={{ duration: 0.7 }}
+        className="relative flex items-center text-[60px] font-extrabold [@media(max-width:520px)]:text-[40px]"
+      >
+        <span className="text-white heading-text tracking-wide">ABOUT</span>
+        <img
+          src={floating}
+          alt="floating"
+          className="floating-astro absolute left-[230px] mt-[-15px] h-[88px] [@media(max-width:460px)]:left-[150px]"
+        />
+      </motion.h1>
+      <motion.p
+        ref={ref}
+        initial={{ x: -50, opacity: 0 }}
+        animate={inView ? { opacity: 1, x: 0 } : {}}
+        transition={{ duration: 0.7, delay: 0.2 }}
+        className="text-[18px] font-light text-justify tracking-[2px] text-[#a5f2ff] [@media(max-width:460px)]:text-[15px]"
+      >
+        Hey Everyone, I&#39;m Aman Bisht, a self-taught frontend developer
+        diving deep into the world of React. With a fervent passion for web3
+        technology, I&#39;m relentlessly exploring new horizons in web
+        development. <br /> <br /> My journey is marked by relentless
+        exploration of these new horizons in web development, always eager to
+        learn, adapt, and innovate. But what truly fuels my drive is the desire
+        to help others. Whether it&#39;s through sharing my knowledge, assisting
+        fellow developers, or offering insights into the intricacies of web
+        development, I find great joy in helping the community grow.{" "}
+      </motion.p>
+    </section>
+  );
+};
