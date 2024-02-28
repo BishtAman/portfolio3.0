@@ -17,7 +17,7 @@ export const About = () => {
   }, [inView]);
 
   return (
-    <main className="w-[100%] h-[100vh] my-[40px] text-white space-y-[70px]">
+    <main className="w-[100%] h-[100vh] my-[40px] text-white space-y-[70px] flex items-center flex-col">
       <section className="flex w-[100%]">
         <section className="flex flex-col justify-between w-[50%] pl-[70px] space-y-8 max-[900px]:w-[100%] max-[900px]:px-[70px] max-[460px]:px-[30px]">
           <motion.h1
@@ -27,7 +27,7 @@ export const About = () => {
             transition={{ duration: 0.7 }}
             className="relative flex items-center text-[60px] font-extrabold max-[520px]:text-[50px] max-[460px]:text-[40px]"
           >
-            <span className="text-[#0EDBFF] about-text ">ABOUT</span>
+            <span className="text-[#0EDBFF] heading-text tracking-wide">ABOUT</span>
             <img
               src={floating}
               alt="floating"

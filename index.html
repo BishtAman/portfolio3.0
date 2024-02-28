@@ -42,31 +42,9 @@
         pointer-events: none;
         mix-blend-mode: difference;
         z-index: 99999999;
-        /* box-shadow: 0 0 0.1rem #fff, 0 0 0.2rem #fff, 0 0 2rem #9844ff,
-          0 0 0.8rem #9844ff, 0 0 2.8rem #9844ff, inset 0 0 1rem #9844ff; */
-        animation: pulsate 1.5s infinite alternate;
-        /* display: none; */
+
       }
 
-      .cursor2 {
-        position: absolute;
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        /* background: white; */
-        border: 2px solid slategray;
-        transition: 0.1s;
-        transform: translate(-50%, -50%);
-        pointer-events: none;
-        mix-blend-mode: difference;
-        z-index: 999999999;
-        background: rgba(255, 255, 255, 0.15);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        backdrop-filter: blur(1px);
-        -webkit-backdrop-filter: blur(1px);
-        border-radius: 50%;
-        border: 1px solid rgba(255, 255, 255, 0.18);
-      }
     </style>
   </head>
   <body class="bg-[#060F19] overflow-x-hidden">
@@ -79,19 +57,9 @@
       cursor.classList.add("cursor");
       document.body.appendChild(cursor);
 
-      // const cursor2 = document.createElement("div");
-      // cursor2.classList.add("cursor2");
-      // document.body.appendChild(cursor2);
-
       function handleMouseMove(e) {
         cursor.style.left = e.pageX + "px";
         cursor.style.top = e.pageY + "px";
-      //   setTimeout(() => {
-      //   //   cursor2.style.left = e.pageX + 15 + "px";
-      //   //   cursor2.style.top = e.pageY + 20 + "px";
-      //   //   // cursor2Ref.current.style.left = e.pageX + 15 + "px";
-      //   //   // cursor2Ref.current.style.top = e.pageY + 20 + "px";
-      //   // }, 100);
       }
 
       document.addEventListener("mousemove", handleMouseMove);
