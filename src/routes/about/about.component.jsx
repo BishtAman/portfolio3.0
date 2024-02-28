@@ -17,21 +17,23 @@ export const About = () => {
   }, [inView]);
 
   return (
-    <main id="about" className="w-[100%] h-[100vh] my-[40px] text-white space-y-[70px] flex items-center justify-center flex-col">
+    <main id="about" className="w-[100%] h-[100vh] my-[40px] text-white space-y-[70px] flex items-center flex-col">
+
       <section className="flex w-[100%]">
-        <section className="flex flex-col justify-between w-[50%] pl-[70px] space-y-8 max-[900px]:w-[100%] max-[900px]:px-[70px] max-[460px]:px-[30px]">
+
+        <section className="flex flex-col justify-between w-[50%] pl-[70px] space-y-8 [@media(max-width:900px)]:w-[100%] [@media(max-width:900px)]:px-[30px]">
           <motion.h1
             ref={ref}
             initial={{ x: -50, opacity: 0 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7 }}
-            className="relative flex items-center text-[60px] font-extrabold max-[520px]:text-[50px] max-[460px]:text-[40px]"
+            className="relative flex items-center text-[60px] font-extrabold [@media(max-width:520px)]:text-[40px]"
           >
-            <span className="text-[#0EDBFF] heading-text tracking-wide">ABOUT</span>
+            <span className="text-white heading-text tracking-wide">ABOUT</span>
             <img
               src={floating}
               alt="floating"
-              className="floating-astro absolute left-[230px] mt-[-15px] h-[88px] max-[460px]:left-[150px]"
+              className="floating-astro absolute left-[230px] mt-[-15px] h-[88px] [@media(max-width:460px)]:left-[150px]"
             />
           </motion.h1>
           <motion.p
@@ -39,7 +41,7 @@ export const About = () => {
             initial={{ x: -50, opacity: 0 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-[18px] font-light text-justify tracking-[2px] text-white max-[460px]:text-[15px]"
+            className="text-[18px] font-light text-justify tracking-[2px] text-[#a5f2ff] [@media(max-width:460px)]:text-[15px]"
           >
             Hey Everyone, I&#39;m Aman Bisht, a self-taught frontend developer
             diving deep into the world of React. With a fervent passion for web3
@@ -54,21 +56,22 @@ export const About = () => {
           </motion.p>
         </section>
 
-        <motion.section className="relative flex justify-center max-[900px]:w-[0%] m-auto">
+        <motion.section className="relative flex justify-center [@media(max-width:900px)]:w-[0%] m-auto">
           <img
             src={Frame}
             alt="this is frame"
-            className="h-[400px]  max-[1170px]:h-[350px]  max-[900px]:hidden "
+            className="h-[400px]  [@media(max-width:1170px)]:h-[350px]  [@media(max-width:900px)]:hidden "
           />
           <img
             src={Man}
             alt="this is man"
-            className="h-[400px] absolute top-[-30px] left-[6%] max-[1170px]:h-[350px] max-[900px]:hidden"
+            className="h-[400px] absolute top-[-30px] left-[6%] [@media(max-width:1170px)]:h-[350px] [@media(max-width:900px)]:hidden"
           />
         </motion.section>
+        
       </section>
 
-      <section className="flex pl-[80px] max-[520px]:pl-[0px] max-[520px]:justify-center">
+      <section className="flex pl-[80px] [@media(max-width:600px)]:pl-[0px] [@media(max-width:520px)]:justify-center">
         {/* <ConnectButton buttonName="Download cv" /> */}
         <div
           // ref={ref}

@@ -14,7 +14,7 @@ export const Home = () => {
       <Navigation />
       <Base />
       {/* <div className="h-[100vh] w-[100%] bg-slate-700"></div> */}
-      {/* <div id="about" className="h-[70px] mt-[30px] max-[450]:h-[0px]"></div> */}
+      <div id="about" className="h-[70px] mt-[30px] max-[450]:h-[0px]"></div>
       <About />
       {/* <div id="about" className="h-[70px] mt-[30px] max-[450]:h-[0px]"></div> */}
       <Skills/>

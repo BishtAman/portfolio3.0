@@ -7,7 +7,7 @@ export const BaseImages = () => {
   return (
     <Fragment>
       <img
-        className=" absolute top-[-7rem] right-0 w-[63%] h-[63%] z-[-1] max-[700px]:w-[70%] max-[700px]:h-[40%]"
+        className=" absolute top-[-7rem] right-0 w-[63%] h-[63%] z-[-1] [@media(max-width:700px)]:w-[70%]  [@media(max-width:700px)]:h-[40%]"
         src={topLine}
         alt="this is a top line"
       />

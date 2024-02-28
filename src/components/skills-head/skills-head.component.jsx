@@ -2,8 +2,8 @@ import Rocket from "../../assets/rocket.png";
 import './skills-head.styles.scss' 
 export const SkillsHead = () => {
   return (
-    <h1 className="text-[60px] font-extrabold relative flex items-center max-[520px]:text-[50px] max-[460px]:text-[40px]">
-      <span className="text-[#0EDBFF] heading-text tracking-wider">
+    <h1 className="text-[60px] font-extrabold relative flex items-center [@media(max-width:520px)]:text-[50px] [@media(max-width:460px)]:text-[40px]">
+      <span className="text-white heading-text tracking-wider">
         Skillset
       </span>
 

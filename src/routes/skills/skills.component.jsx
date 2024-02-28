@@ -24,7 +24,7 @@ export const Skills = () => {
   return (
     <div id="skills" className=" w-full h-full px-10  flex items-center flex-col">
       <SkillsHead />
-      <div className="flex flex-wrap justify-center mt-[70px] max-[450px]:mt-[40px]">
+      <div className="flex flex-wrap justify-center mt-[70px] ">
         {loadedSkills.map(({ name, imageURL, color, className }) => (
           <SkillButton
             key={name}
