@@ -3,6 +3,7 @@ import { Curtains } from "../../components/opening-curtains/opening-curtains.com
 import { About } from "../about/about.component";
 import { Base } from "../base/base.component";
 import { Navigation } from "../navigation/navigation-bar.component";
+import { Projects } from "../projects/projects.component";
 import { Skills } from "../skills/skills.component";
 import "./home.styles.scss";
 
@@ -18,6 +19,7 @@ export const Home = () => {
       <About />
       {/* <div id="about" className="h-[70px] mt-[30px] max-[450]:h-[0px]"></div> */}
       <Skills/>
+      <Projects/>
     </div>
   );
 };
