@@ -38,17 +38,16 @@ export const AboutInfo = () => {
         initial={{ x: -50, opacity: 0 }}
         animate={inView ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 0.7, delay: 0.2 }}
-        className="text-[18px] font-light text-justify tracking-[2px] text-[#a5f2ff] [@media(max-width:460px)]:text-[15px]"
+        className="text-[18px] font-light text-justify tracking-[2px] text-[#36e1ff] [@media(max-width:460px)]:text-[15px]"
       >
-        Hey Everyone, I&#39;m Aman Bisht, a self-taught frontend developer
-        diving deep into the world of React. With a fervent passion for web3
-        technology, I&#39;m relentlessly exploring new horizons in web
+        Hey Everyone, I&#39;m  <span className="aboutInfo-span">Aman Bisht</span>, a self-taught <span className="aboutInfo-span">frontend developer</span> {" "}
+        diving deep into the world of <span className="aboutInfo-span">React</span>. With a fervent passion for <span className="aboutInfo-span"> web3
+        technology</span>, I&#39;m relentlessly exploring new horizons in web
         development. <br /> <br /> My journey is marked by relentless
-        exploration of these new horizons in web development, always eager to
-        learn, adapt, and innovate. But what truly fuels my drive is the desire
+        exploration of these new horizons in web development, always eager to <span className="aboutInfo-span">learn, adapt, and innovate</span>. But what truly fuels my drive is the desire
         to help others. Whether it&#39;s through sharing my knowledge, assisting
         fellow developers, or offering insights into the intricacies of web
-        development, I find great joy in helping the community grow.{" "}
+        development, I find great joy in  <span className="aboutInfo-span">helping the community grow</span>.{" "}
       </motion.p>
     </section>
   );
