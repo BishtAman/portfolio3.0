@@ -70,6 +70,21 @@ html {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+
+.go-to-up {
+  display: none;
+  animation: show-up 1s forwards 5s;
+}
+
+@keyframes show-up {
+  from {
+    display: none;
+  }
+  to {
+    display: block;
+  }
+}
+
 .phrase {
   text-shadow: 5px 3px 13px rgba(0, 255, 247, 0.3);
 }
@@ -89,10 +104,9 @@ body {
   }
 }
 
-
 .toast-box {
-  position: absolute; 
-  top: -4rem; 
+  position: absolute;
+  top: -4rem;
 
   /* 2 rem */
   /* right: 25%; */
@@ -116,10 +130,10 @@ body {
 }
 
 @keyframes toast {
-  30%{
+  30% {
     top: 2rem;
   }
-  70%{
+  70% {
     top: 2rem;
   }
 }
