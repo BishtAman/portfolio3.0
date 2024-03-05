@@ -32,7 +32,7 @@ export const Navigation = () => {
               <a href="#skills">
                 <li>SKILLS</li>
               </a>
-              <a href="">
+              <a href="#projects">
                 <li>PROJECTS</li>
               </a>
               <a href="">
@@ -70,7 +70,7 @@ export const Navigation = () => {
           <a href="#skills">
             <li>SKILLS</li>
           </a>
-          <a>
+          <a href="#projects">
             <li>PROJECTS</li>
           </a>
           <a>

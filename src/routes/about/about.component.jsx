@@ -18,7 +18,7 @@ export const About = () => {
       <section className="flex pl-[80px] [@media(max-width:600px)]:pl-[0px] [@media(max-width:520px)]:justify-center">
         <div>
           <button className="slide_from_right">
-            <span className="btn">DOWNLOAD CV</span>
+            <span id="skills" className="btn">DOWNLOAD CV</span>
           </button>
         </div>
       </section>
