@@ -3,6 +3,7 @@ import floating from "../../assets/floating.png";
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
+import { AboutImg } from "../about-img/about-img.component";
 
 export const AboutInfo = () => {
   const [ref, inView] = useInView();
@@ -20,15 +21,18 @@ export const AboutInfo = () => {
         initial={{ x: -50, opacity: 0 }}
         animate={inView ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 0.7 }}
-        className="relative flex items-center text-[60px] font-extrabold [@media(max-width:520px)]:text-[40px]"
+        className=" flex items-center justify-center  text-[60px] font-extrabold [@media(max-width:520px)]:text-[40px]"
       >
-        <span className="text-white heading-text tracking-wide">ABOUT</span>
+        <span className="relative flex items-center text-white heading-text ml-[-50px] tracking-wide">ABOUT
+        
         <img
-          src={floating}
+          src={floating} 
           alt="floating"
-          className="floating-astro absolute left-[230px] mt-[-15px] h-[88px] [@media(max-width:460px)]:left-[150px]"
+          className="floating-astro absolute right-[-80px] mt-[-15px] h-[88px] [@media(max-width:460px)]:left-[150px]"
         />
+        </span>
       </motion.h1>
+      <AboutImg num={2} />
       <motion.p
         ref={ref}
         initial={{ x: -50, opacity: 0 }}

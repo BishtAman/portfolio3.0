@@ -7,8 +7,10 @@ const App = () => {
     <Fragment>
       <Home />
       {/* <Cursor /> */}
-      <div className="toast-box">
-        <h1 className="toast-heading">This website is currently under development</h1>
+      <div className="toast-box ">
+        <h1 className="toast-heading">
+          This website is currently under development
+        </h1>
       </div>
     </Fragment>
   );

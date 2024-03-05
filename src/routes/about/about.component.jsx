@@ -8,11 +8,11 @@ export const About = () => {
   return (
     <main
       id="about"
-      className="w-[100%] h-[100vh] my-[40px] text-white space-y-[70px] flex items-center flex-col"
+      className="w-[100%] h-[100%] my-[80px] text-white space-y-[70px] flex items-center flex-col"
     >
       <section className="flex w-[100%]">
         <AboutInfo />
-        <AboutImg />
+        <AboutImg num={1} />
       </section>
 
       <section className="flex pl-[80px] [@media(max-width:600px)]:pl-[0px] [@media(max-width:520px)]:justify-center">

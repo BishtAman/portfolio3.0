@@ -42,7 +42,7 @@ export const ProjectCard = ({ name, imageURL, description, link, tech }) => {
               <div className="circle" id="bottom"></div>
             </div>
 
-            <div className="front-content font-extralight text-[18px] max-sm:text-[8px]">
+            <div className="front-content font-extralight text-[16px] max-sm:text-[8px]">
               <div className="front-details">
                 <div className="description">
                   <div className="title text-justify font-light ">

@@ -19,15 +19,15 @@ html {
 }
 *::-webkit-scrollbar-track {
   border-radius: 5px;
-  background-color: #dfe9eb;
+  background-color: #002d36;
 }
 
 *::-webkit-scrollbar-track:hover {
-  background-color: #b8c0c2;
+  background-color: #007492;
 }
 
 *::-webkit-scrollbar-track:active {
-  background-color: #b8c0c2;
+  background-color: #007492;
 }
 
 *::-webkit-scrollbar-thumb {
@@ -89,11 +89,14 @@ body {
   }
 }
 
+
 .toast-box {
-  position: absolute;
+  position: absolute; 
   top: -4rem; 
+
   /* 2 rem */
   /* right: 25%; */
+  margin: 0px 20px;
   padding: 10px 15px;
   z-index: 999999999;
   color: white;

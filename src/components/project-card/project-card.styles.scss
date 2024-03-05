@@ -44,17 +44,11 @@
   position: absolute;
   content: " ";
   display: block;
-  width: 100%;
+  width: 66%;
   height: 160%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    #00d9ff,
-    #00d9ff,
-    #00d9ff,
-    #00d9ff,
-    transparent
-  );
+  background: linear-gradient(90deg, transparent, #008cff, #0059ff, #5d00ff, #8c00ff, transparent);
+  // background-color: white;
+  
   animation: rotation_481 14s infinite linear;
 }
 
@@ -193,7 +187,7 @@
   background-color: #00000099;
   backdrop-filter: blur(5px);
   border-radius: 5px;
-  width: fit-content;
+  width: fit-content; 
   margin: 10px 0px;
 }
 @media (max-width: 640px) {
