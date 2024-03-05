@@ -2,7 +2,7 @@
 const BLOGS =  [
     {
         thumbnail: import('../assets/blogs/blockchain.png'), 
-        name: 'Introduction to Blockchain',
+        name: 'Blockchain',
         date: '19 Sep, 2022',
         link: 'https://amanbishtcoder.hashnode.dev/introduction-to-blockchain'
     },
