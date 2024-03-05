@@ -1,6 +1,6 @@
 import "./blogs.styles.scss";
 import BLOGS from "../../constants/blogs";
-import ProjectStock from '../../assets/projectsStock.png'
+import BlogStock from '../../assets/blogstock.png'
 import { useState, useEffect } from "react";
 import { BlogCard } from "../../components/blog-card/blog-card.component";
 
@@ -25,9 +25,9 @@ export const Blogs = () => {
       <h1 className="text-[60px] my-[50px] font-extrabold relative flex items-center w-fit max-sm:ml-[-50px] [@media(max-width:460px)]:text-[45px]">
         <span className="text-white heading-text tracking-wider">Blogs</span>
         <img
-          src={ProjectStock}
+          src={BlogStock}
           alt="floating"
-          className="floating-astro absolute right-[-83px] mt-[-15px] h-[90px] "
+          className="floating-astro absolute right-[-88px] mt-[-15px] h-[90px] "
           // [@media(max-width:460px)]:left-[150px]
         />
       </h1>
