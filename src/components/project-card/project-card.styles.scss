@@ -46,8 +46,8 @@
   display: block;
   width: 66%;
   height: 160%;
-  background: linear-gradient(90deg, transparent, #008cff, #0059ff, #5d00ff, #8c00ff, transparent);
-  // background-color: white;
+  // background: linear-gradient(90deg, transparent, #008cff, #0059ff, #5d00ff, #8c00ff, transparent);
+  background-color: white;
   
   animation: rotation_481 14s infinite linear;
 }
@@ -101,15 +101,20 @@
   padding: 2px 10px;
   border-radius: 10px;
   backdrop-filter: blur(2px);
+  -webkit-backdrop-filter:blur(2px);
+
   width: fit-content;
+  width: -moz-fit-content;
 }
 
 .description {
-  box-shadow: 0px 0px 10px 5px #00000088;
   width: 100%;
   padding: 10px;
+  box-shadow: 0px 0px 10px 5px #00000088;
   background-color: #00000099;
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter:blur(5px);
+
   border-radius: 5px;
 }
 
@@ -145,7 +150,7 @@
   background-color: #00ff77;
   position: relative;
   filter: blur(15px);
-  animation: floating 2600ms infinite linear;
+  animation: floating 4000ms infinite linear;
 }
 
 #bottom {
@@ -186,8 +191,10 @@
   padding: 10px;
   background-color: #00000099;
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   border-radius: 5px;
   width: fit-content; 
+  width:  -moz-fit-content; 
   margin: 10px 0px;
 }
 @media (max-width: 640px) {
