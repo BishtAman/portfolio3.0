@@ -16,11 +16,7 @@ export const AboutInfo = () => {
   }, [inView]);
   return (
     <section className="flex flex-col justify-between w-[50%] pl-[70px] space-y-8 [@media(max-width:900px)]:w-[100%] [@media(max-width:900px)]:px-[30px]">
-      <motion.h1
-        ref={ref}
-        initial={{ x: -50, opacity: 0 }}
-        animate={inView ? { opacity: 1, x: 0 } : {}}
-        transition={{ duration: 0.7 }}
+      <h1
         className=" flex items-center justify-center  text-[60px] font-extrabold [@media(max-width:520px)]:text-[40px]"
       >
         <span className="relative flex items-center text-white heading-text ml-[-50px] tracking-wide">ABOUT
@@ -31,7 +27,7 @@ export const AboutInfo = () => {
           className="floating-astro absolute right-[-80px] mt-[-15px] h-[88px] [@media(max-width:460px)]:left-[150px]"
         />
         </span>
-      </motion.h1>
+      </h1>
       <AboutImg num={2} />
       <motion.p
         ref={ref}
