@@ -1,13 +1,13 @@
 import "./blogs.styles.scss";
 import BLOGS from "../../constants/blogs";
-import BlogStock from '../../assets/blogstock.png'
+import BlogStock from "../../assets/blogstock.png";
 import { useState, useEffect } from "react";
 import { BlogCard } from "../../components/blog-card/blog-card.component";
 
 export const Blogs = () => {
   const [loadedBlogs, setloadedBlogs] = useState([]);
 
-  useEffect(() => { 
+  useEffect(() => {
     const fetchSkills = async () => {
       const loadedBlogs = await Promise.all(
         BLOGS.map(async (skill) => {
@@ -21,7 +21,10 @@ export const Blogs = () => {
     fetchSkills();
   }, []);
   return (
-    <main className="w-full  p-[100px] max-sm:p-[20px] max-sm:flex max-sm:flex-col max-sm:items-center" id="blog">
+    <main
+      className="w-full  p-[100px] max-sm:p-[20px] max-sm:flex max-sm:flex-col max-sm:items-center"
+      id="blog"
+    >
       <h1 className="text-[60px] my-[50px] font-extrabold relative flex items-center w-fit max-sm:ml-[-50px] [@media(max-width:460px)]:text-[45px]">
         <span className="text-white heading-text tracking-wider">Blogs</span>
         <img
@@ -32,16 +35,21 @@ export const Blogs = () => {
         />
       </h1>
 
-      <div className="flex justify-between flex-wrap  ">
-        {loadedBlogs.map(({ thumbnail, name, date, link }) => (
-          <BlogCard
-            key={name}
-            thumbnail={thumbnail}
-            name={name}
-            date={date}
-            link={link}
-          />
-        ))}
+      <div className="flex justify-between flex-wrap max-lg:flex-col max-lg:items-center">
+        {loadedBlogs.map(
+          ({ thumbnail, name, subtitle, date, link, read, tag }) => (
+            <BlogCard
+              key={name}
+              thumbnail={thumbnail}
+              name={name}
+              subtitle={subtitle}
+              date={date}
+              link={link}
+              read={read}
+              tag={tag}
+            />
+          )
+        )}
       </div>
     </main>
   );
