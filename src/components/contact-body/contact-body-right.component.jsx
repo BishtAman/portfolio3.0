@@ -79,7 +79,7 @@ export const ContactBodyRight = () => {
           />
         </div>
 
-        <div className="max-md:flex justify-center">
+        <div className="max-md:flex justify-center my-[25px] max-sm:my-[0px]">
           <motion.button
             whileTap={{ scale: 0.9 }}
             className="form-submit-button mx-[30px]"

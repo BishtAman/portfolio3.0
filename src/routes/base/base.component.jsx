@@ -16,7 +16,7 @@ export const Base = () => {
         initial={{scale:0}}
         animate={{scale:1}}
         transition={{ duration: 0.7, delay: 6 }}
-        className="fixed z-[9999999] bottom-[10px] right-[10px] "
+        className="fixed z-[9999999] bottom-[10px] right-[10px] h-[50px] max-sm:h-[40px]"
         src={Top}
         alt="go-to-top"
       />
