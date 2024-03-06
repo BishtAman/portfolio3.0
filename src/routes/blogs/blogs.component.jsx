@@ -21,7 +21,7 @@ export const Blogs = () => {
     fetchSkills();
   }, []);
   return (
-    <main className="w-full  p-[100px] max-sm:p-[20px] max-sm:flex max-sm:flex-col max-sm:items-center" id="projects">
+    <main className="w-full  p-[100px] max-sm:p-[20px] max-sm:flex max-sm:flex-col max-sm:items-center" id="blog">
       <h1 className="text-[60px] my-[50px] font-extrabold relative flex items-center w-fit max-sm:ml-[-50px] [@media(max-width:460px)]:text-[45px]">
         <span className="text-white heading-text tracking-wider">Blogs</span>
         <img

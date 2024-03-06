@@ -41,7 +41,9 @@ export const BaseData = () => {
         <span className="text-[#00D9FF]">Code</span> and{" "}
         <span className="text-[#00D9FF]">Creativity</span> Collide.
       </motion.p>
+      <a href="#contact">
       <ConnectButton buttonName={buttonName} />
+      </a>
     </div>
   );
 };

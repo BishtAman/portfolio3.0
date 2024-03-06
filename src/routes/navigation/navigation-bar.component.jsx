@@ -35,10 +35,10 @@ export const Navigation = () => {
               <a href="#projects">
                 <li>PROJECTS</li>
               </a>
-              <a href="">
-                <li>OTHERS</li>
+              <a href="#blog">
+                <li>BLOGS</li>
               </a>
-              <a href="" target="_blank">
+              <a href="#contact">
                 <li>CONTACT</li>
               </a>
             </ul>
@@ -73,10 +73,10 @@ export const Navigation = () => {
           <a href="#projects">
             <li>PROJECTS</li>
           </a>
-          <a>
-            <li>OTHERS</li>
+          <a href="#blog">
+            <li>BLOGS</li>
           </a>
-          <a>
+          <a href="#contact">
             <li>CONTACT</li>
           </a>
         </ul>

@@ -1,0 +1,29 @@
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: #000;
+}
+
+input:focus input::placeholder {
+  color: #000;
+}
+
+textarea[name="t-area"] {
+  resize: none;
+}
+
+.form-submit-button {
+    border: 2px solid #000;
+    padding: 12px 22px;
+    color: black;
+}
+.form-submit-button::after{
+    content: "";
+    display: none;
+   
+}
+
+.form-submit-button:hover{
+    color: white;
+    background-color: black;
+}
