@@ -4,6 +4,7 @@ import { About } from "../about/about.component";
 import { Base } from "../base/base.component";
 import { Blogs } from "../blogs/blogs.component";
 import { Contact } from "../contact/contact.component";
+import { Footer } from "../footer/footer.component";
 import { Navigation } from "../navigation/navigation-bar.component";
 import { Projects } from "../projects/projects.component";
 import { Skills } from "../skills/skills.component";
@@ -24,6 +25,7 @@ export const Home = () => {
       <Projects/>
       <Blogs/>
       <Contact/>
+      <Footer/>
     </div>
   );
 };
