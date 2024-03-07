@@ -4,7 +4,7 @@ import Location from "../../assets/contact/location.png";
 
 export const ContactBodyLeft = () => {
   return (
-    <div className="personal-details  bg-slate-900 text-white flex flex-col justify-between  w-[40%] p-[40px] max-lg:px-[20px] max-md:p-[40px] max-md:w-[100%] max-md:h-[60vh]">
+    <div className="personal-details  text-white flex flex-col justify-between  w-[40%] p-[40px] max-lg:px-[20px] max-md:p-[40px] max-md:w-[100%] max-md:h-[60vh]">
       <h1 className="text-[30px] max-lg:text-[23px] font-semibold max-md:text-[40px] max-md:text-center  max-sm:text-[35px]">
         Contact Information
       </h1>

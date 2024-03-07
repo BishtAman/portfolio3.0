@@ -26,7 +26,7 @@ export const ContactBodyRight = () => {
     toast("Your message has been sent!");
   };
   return (
-    <div className="write-message bg-slate-200 w-[60%] px-[30px] max-lg:px-[5px] flex flex-col justify-center max-md:w-[100%] max-md:py-[40px] max-md:px-[20px] max-sm:py-[30px] max-sm:px-[6px]">
+    <div className="write-message  w-[60%] px-[30px] max-lg:px-[5px] flex flex-col justify-center max-md:w-[100%] max-md:py-[40px] max-md:px-[20px] max-sm:py-[30px] max-sm:px-[6px]">
       <form ref={form} onSubmit={sendEmail} className="items-center">
         <div className="flex justify-between max-lg:flex-col items-center max-md:px-[23px]">
           <div className="form-control m-[30px] max-lg:m-[10px] bg-white relative  w-[300px] max-lg:w-[400px] max-md:w-full rounded-md h-[60px] flex  items-center">

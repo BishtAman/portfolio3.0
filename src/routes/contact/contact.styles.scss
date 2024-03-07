@@ -27,3 +27,11 @@ textarea[name="t-area"] {
     color: white;
     background-color: black;
 }
+
+.personal-details{
+  background: linear-gradient(109.6deg, rgb(20, 30, 48, 0.3) 11.2%, rgb(36, 59, 85, 0.3) 91.1%);
+}
+
+.write-message{
+  background: linear-gradient(to bottom, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.1) 100%), radial-gradient(at top center, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.10) 120%) #989898;
+}

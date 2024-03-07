@@ -5,7 +5,7 @@ import "./footer.styles.scss";
 export const Footer = () => {
   return (
     <main className="w-full">
-      <footer className="bg-white max-md:mt-[50px]">
+      <footer className="footer-main max-md:mt-[50px] text-gray-400">
         <div className="flex justify-center">
           <a href="#" className="flex items-center my-[20px]">
             <img
@@ -13,7 +13,7 @@ export const Footer = () => {
               src={logo}
               alt="this is the logo"
             />
-            <span className="text-slate-700 font-extrabold text-[25px] mx-[-8px] [@media(max-width:1255px)]:text-[18px] [@media(max-width:1255px)]:mx-[-5px]">
+            <span className=" font-extrabold text-[25px] mx-[-8px] [@media(max-width:1255px)]:text-[18px] [@media(max-width:1255px)]:mx-[-5px] text-gray-300">
               man
             </span>
           </a>
@@ -21,7 +21,7 @@ export const Footer = () => {
         <hr className="mx-auto w-[90%] border-2 border-gray-600" />
         <div className="flex justify-around my-[20px] flex-wrap ">
           <section className="space-y-5">
-            <h1 className="text-[20px] font-semibold">Resources</h1>
+            <h1 className="text-[20px] font-semibold text-gray-300">Resources</h1>
             <div className="footer-list">
               <a
                 href="https://amanbishtcoder.hashnode.dev/"
@@ -43,7 +43,7 @@ export const Footer = () => {
             </div>
           </section>
           <section className="space-y-5">
-            <h1 className="text-[20px] font-semibold">Quick Links</h1>
+            <h1 className="text-[20px] font-semibold text-gray-300">Quick Links</h1>
             <div className="footer-list">
               <a
                 href="https://github.com/BishtAman/portfolio3.0"
@@ -83,7 +83,7 @@ export const Footer = () => {
             </div>
           </section>
           <section className="max-md:mt-[40px]">
-            <h1 className="text-[20px] font-semibold">
+            <h1 className="text-[20px] font-semibold text-gray-300">
               Join our Discord Community{" "}
             </h1>
             <a
@@ -107,7 +107,7 @@ export const Footer = () => {
         <hr className="mx-auto w-[90%] border-2 border-gray-600" />
 
         <div className="flex justify-center items-center p-[15px]">
-          <span className="text-[15px] text-gray-900 text-center ">
+          <span className="text-[15px] text-gray-500 text-center ">
             © 2024{" "}
             <a href="/" className="hover:underline">
               Aman Bisht
