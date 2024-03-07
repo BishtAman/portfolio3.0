@@ -1,21 +1,21 @@
 # My Portfolio
 
-Welcome to my portfolio project! This repository contains the code for my personal portfolio website, which is currently under development.
+Welcome to my portfolio project! This repository contains the code for my personal portfolio website, which is now completed and deployed.
 
 ## Project Overview
 
-This portfolio website is being developed using React and Tailwind CSS. It will showcase my skills, projects, and experience to potential employers, clients, and collaborators.
+This portfolio website is developed using React and Tailwind CSS. It showcases my skills, projects, and experience to potential employers, clients, and collaborators.
 
 ## Development Status
 
-As of February 17, 2024, the project is in the early stages of development. I am working on setting up the basic structure of the website, designing the layout, and implementing essential features.
+The project is completed and has been deployed. The website is live and can be accessed at [amanbisht.vercel.app](https://amanbisht.vercel.app).
 
 ## Technologies Used
 
 - **React**: A JavaScript library for building user interfaces.
 - **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
-- **Vite**: A build tool that provides fast and efficient development experience for modern web projects.
-- **Other dependencies**: Any additional dependencies or tools used in the project will be listed in the `package.json` file.
+- **Vite**: A build tool that provides a fast and efficient development experience for modern web projects.
+- **Other dependencies**: Additional dependencies or tools used in the project are listed in the `package.json` file.
 
 ## Getting Started
 
@@ -32,10 +32,9 @@ To run the project locally, follow these steps:
 - **Portfolio 1.0**: [https://amanbisht-dev.netlify.app](https://amanbisht-dev.netlify.app)
 - **Portfolio 2.0**: [https://bishtaman.vercel.app](https://bishtaman.vercel.app)
 
-
 ## Contributing
 
-This project is currently a solo endeavor. However, contributions, suggestions, and feedback are always welcome! If you find any bugs or have ideas for improvements, please feel free to open an issue or submit a pull request.
+This project was a solo endeavor, but contributions, suggestions, and feedback are always welcome! If you find any bugs or have ideas for improvements, please feel free to open an issue or submit a pull request.
 
 ## Contact
 
