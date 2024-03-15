@@ -75,6 +75,13 @@ const SKILLS = [
     className: "firebase",
   },
   {
+    name: "Streamlit",
+    imageURL: import("../assets/skills/streamlit.svg"),
+
+    color: "fff",
+    className: "slit",
+  },
+  {
     name: "Content Writing",
     imageURL: import("../assets/skills/writing.png"),
 

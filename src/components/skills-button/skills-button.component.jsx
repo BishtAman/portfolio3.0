@@ -25,7 +25,7 @@ export const SkillButton = ({ name, imageURL, color, className }) => {
       className={`raise mx-[10px] my-[15px] skill-button flex items-center bg-[#${color}]  space-x-[5px] rounded-lg w-fit px-[15px] py-[9px]   ${className}  [@media(max-width:450px)]:mx-[7px] [@media(max-width:450px)]:my-[12px] [@media(max-width:400px)]:px-[12px] [@media(max-width:400px)]:py-[7px]`}
     >
       <img
-        className="h-[20px]"
+        className={`h-[24px] ${className}s`}
         src={imageURL}
         alt={name}
       />

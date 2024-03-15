@@ -14,9 +14,37 @@ const PROJECTS = [
       tech: ["React", "TailwindCSS"]
     },
     {
+      name: "YouTube to Blog Post",
+      imageURL: import('../assets/projects/yt.png'),
+      description:"Project that seamlessly transforms your favorite YouTube videos into detailed, engaging blog posts. Simply provide the video URL, and it will generate a comprehensive written narrative complete with thumbnails. The immersive nature of video content and the depth of written articles, all at your fingertips with 'YouTube to Blog Post'.",
+      link:"https://github.com/BishtAman/Streamlit_Intro/tree/main/Chapter9_Apps/youtube2blog",
+      tech: ["Python", "OpenAI"]
+    },
+    {
+      name: "Ai Meal Planner",
+      imageURL: import('../assets/projects/meal.png'), 
+      description:" Say goodbye to mealtime stress and hello to effortless meal planning tailored specifically to your preferences and dietary needs. With the AI Meal Planner, all it takes is a few simple details from you, such as your dietary restrictions, food preferences, and nutritional goals. It creates 7-day meal plan that meets your requirements.",
+      link:"https://github.com/BishtAman/Streamlit_Intro/tree/main/Chapter9_Apps/Meal_Planner",
+      tech: ["Python", "OpenAI"]
+    },
+    {
+      name: "Ai Recipe Generator",
+      imageURL: import('../assets/projects/recipe.png'),
+      description:"Tool that transforms your culinary inspirations into beautifully crafted recipes complete with stunning dish images and step-by-step instructions. Simply input the name of the dish you crave, and watch as our advanced artificial intelligence system conjures up a detailed recipe, along with a mouthwatering image showcasing the final creation.",
+      link:"https://github.com/BishtAman/Streamlit_Intro/tree/main/Chapter9_Apps/Recipie_Generator",
+      tech: ["Python", "OpenAI"]
+    },
+    {
+      name: "Logo Generator",
+      imageURL: import('../assets/projects/logo.png'),
+      description:"It creates stunning logos with ease and precision. With our platform, you have the power to generate captivating logos tailored to your preferences, whether you desire vibrant colors, sleek minimalism, intricate details, or timeless simplicity. It allows you to specify your preferences for color schemes, style elements, and complexity levels.",
+      link:"https://github.com/BishtAman/Streamlit_Intro/tree/main/Chapter9_Apps/Logo_Generator",
+      tech: ["Python", "OpenAI"]
+    },
+    {
       name: "Bharat Payments",
       imageURL: import('../assets/projects/bharat.png'),
-      description:"Bharat Payments Interface is a Figma design showcasing a meticulously crafted webpage interface for Bharat Payments. With seamless navigation enabled through a prototype, users can explore the intuitive layout effortlessly. Additionally, the design features three distinct and captivating credit card designs, each exuding elegance and innovation.",
+      description:"Bharat Payments Interface is a Figma design showcasing a meticulously crafted webpage interface for Bharat Payments. With seamless navigation enabled through a prototype, users can explore the intuitive layout effortlessly. Additionally, the design features three distinct and captivating credit card designs.",
       link:"https://www.figma.com/file/0FQzPr5uH4oYNa2aH9y5BK/Untitled?type=design&mode=design&t=bPmFLUyrUbtR5oeT-1",
       tech: ["Figma Prototype"]
     },

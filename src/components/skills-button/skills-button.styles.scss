@@ -47,6 +47,15 @@
   border: 3px solid rgb(45, 45, 45);
 }
 
+.slit {
+  border: 3px solid rgb(72, 3, 3);
+  background-color: rgb(105, 0, 0);
+}
+.slits{
+  filter: invert(1);
+height: 10px;
+}
+
 // .raise:hover,
 // .raise:focus {
 //   box-shadow: 0px 0px 10px 3px white;
