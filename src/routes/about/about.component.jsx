@@ -17,11 +17,11 @@ export const About = () => {
 
       <section className="flex pl-[80px] [@media(max-width:600px)]:pl-[0px] [@media(max-width:520px)]:justify-center">
         <div>
-          <a href={Resume} target="_blank" download>
           <button className="slide_from_right">
+          <a href={Resume} target="_blank" download>
             <span id="skills" className="btn">DOWNLOAD RESUME</span>
-          </button>
           </a>
+          </button>
         </div>
       </section>
 
