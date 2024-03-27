@@ -1,5 +1,5 @@
 import "./about.styles.scss";
-import Resume from '../../assets/resume.pdf'
+import Resume from '../../assets/Resume.pdf'
 import { AboutInfo } from "../../components/about-info/about-info.component";
 import { AboutImg } from "../../components/about-img/about-img.component";
 
@@ -19,7 +19,7 @@ export const About = () => {
         <div>
           <a href={Resume} download>
           <button className="slide_from_right">
-            <span id="skills" className="btn">DOWNLOAD CV</span>
+            <span id="skills" className="btn">DOWNLOAD RESUME</span>
           </button>
           </a>
         </div>
