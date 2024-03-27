@@ -1,7 +1,7 @@
 import "./about.styles.scss";
 import Resume from '../../assets/Resume.pdf'
 import { AboutInfo } from "../../components/about-info/about-info.component";
-import { AboutImg } from "../../components/about-img/about-img.component";
+import { AboutImg  } from "../../components/about-img/about-img.component";
 
 
 export const About = () => {
