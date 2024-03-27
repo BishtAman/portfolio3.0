@@ -1,7 +1,7 @@
 import "./about.styles.scss";
-import CV from '../../assets/Resume.pdf'
+// import Resume from '../../assets/Resume.pdf'
 import { AboutInfo } from "../../components/about-info/about-info.component";
-import { AboutImg  } from "../../components/about-img/about-img.component";
+import { AboutImg } from "../../components/about-img/about-img.component";
 
 
 export const About = () => {
@@ -17,7 +17,7 @@ export const About = () => {
 
       <section className="flex pl-[80px] [@media(max-width:600px)]:pl-[0px] [@media(max-width:520px)]:justify-center">
         <div>
-          <a href={CV} download>
+          <a href={import('../../assets/Resume.pdf')} download>
           <button className="slide_from_right">
             <span id="skills" className="btn">DOWNLOAD RESUME</span>
           </button>
