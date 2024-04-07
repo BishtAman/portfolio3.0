@@ -37,7 +37,7 @@ export const Footer = () => {
               >
                 <p>Medium</p>
               </a>
-              <a href="" target="_blank" rel="noreferrer">
+              <a href="https://drive.google.com/drive/folders/1u3dnAW8HYlPNsj7q00PZhC-vKI6c6Rem?usp=sharing" target="_blank" rel="noreferrer">
                 <p>Cheatsheets</p>
               </a>
             </div>
